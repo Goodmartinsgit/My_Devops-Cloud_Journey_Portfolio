@@ -52,7 +52,6 @@ log ""
 i=1
 for CMD in "${CMDS[@]}"; do
     printf "  [%d/%d] Running: %s\n" "$i" "$TOTAL" "$CMD"
-
     log "### $(printf '%02d' "$i"). \`$CMD\`"
     log ""
     log "\`\`\`bash"
@@ -65,9 +64,22 @@ for CMD in "${CMDS[@]}"; do
     eval "$CMD" >> "$OUTPUT_FILE" 2>&1
     log "\`\`\`"
     log ""
-
     i=$(( i + 1 ))
 done
 
 echo "  ✔  $TOTAL entry/entries appended → $OUTPUT_FILE"
+
+# --- Sync log output into README.md ---
+MARKER="<!-- LOG_OUTPUT -->"
+README_FILE="$(cd "$(dirname "$OUTPUT_FILE")" && pwd)/README.md"
+
+if [ -f "$README_FILE" ] && grep -q "$MARKER" "$README_FILE"; then
+    MARKER_LINE=$(grep -n "$MARKER" "$README_FILE" | head -1 | cut -d: -f1)
+    head -n "$MARKER_LINE" "$README_FILE" > "${README_FILE}.tmp"
+    printf '\n' >> "${README_FILE}.tmp"
+    cat "$OUTPUT_FILE" >> "${README_FILE}.tmp"
+    mv "${README_FILE}.tmp" "$README_FILE"
+    echo "  ✔  README.md synced  → $README_FILE"
+fi
+
 echo ""
