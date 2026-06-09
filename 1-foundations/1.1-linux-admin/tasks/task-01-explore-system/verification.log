@@ -3,7 +3,7 @@
 
 ## 🔍 Verifying OS Distribution and Kernel Version
 
-> **Timestamp:** `2026-06-09 22:48:51`
+> **Timestamp:** `2026-06-09 23:39:40`
 
 ### 01. `cat /etc/os-release`
 
@@ -61,7 +61,7 @@ Linux ELDAVED-GLOBAL 6.6.114.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Mo
 
 ## 🔍 Auditing System Hardware & Resources
 
-> **Timestamp:** `2026-06-09 22:49:00`
+> **Timestamp:** `2026-06-09 23:39:53`
 
 ### 01. `free -h`
 
@@ -73,7 +73,7 @@ free -h
 
 ```text
                total        used        free      shared  buff/cache   available
-Mem:           7.7Gi       607Mi       6.8Gi       4.5Mi       457Mi       7.1Gi
+Mem:           7.7Gi       602Mi       6.7Gi       4.6Mi       568Mi       7.1Gi
 Swap:          2.0Gi          0B       2.0Gi
 ```
 
@@ -136,6 +136,6 @@ uptime
 **Output:**
 
 ```text
- 22:49:23 up  1:17,  1 user,  load average: 5.36, 1.48, 0.57
+ 23:40:01 up  2:07,  1 user,  load average: 3.98, 1.07, 0.36
 ```
 

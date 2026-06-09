@@ -7,3 +7,145 @@ OS distribution, kernel version, CPU, RAM, and disk layout — as a baseline
 before any software is installed or configured.
 
 <!-- LOG_OUTPUT -->
+
+
+---
+
+## 🔍 Verifying OS Distribution and Kernel Version
+
+> **Timestamp:** `2026-06-09 23:39:40`
+
+### 01. `cat /etc/os-release`
+
+```bash
+cat /etc/os-release
+```
+
+**Output:**
+
+```text
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+```
+
+### 02. `lsb_release -a`
+
+```bash
+lsb_release -a
+```
+
+**Output:**
+
+```text
+Distributor ID:	Ubuntu
+Description:	Ubuntu 24.04.4 LTS
+Release:	24.04
+Codename:	noble
+```
+
+### 03. `uname -a`
+
+```bash
+uname -a
+```
+
+**Output:**
+
+```text
+Linux ELDAVED-GLOBAL 6.6.114.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Mon Dec  1 20:46:23 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+```
+
+
+---
+
+## 🔍 Auditing System Hardware & Resources
+
+> **Timestamp:** `2026-06-09 23:39:53`
+
+### 01. `free -h`
+
+```bash
+free -h
+```
+
+**Output:**
+
+```text
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       602Mi       6.7Gi       4.6Mi       568Mi       7.1Gi
+Swap:          2.0Gi          0B       2.0Gi
+```
+
+### 02. `df -h`
+
+```bash
+df -h
+```
+
+**Output:**
+
+```text
+Filesystem      Size  Used Avail Use% Mounted on
+none            3.9G     0  3.9G   0% /usr/lib/modules/6.6.114.1-microsoft-standard-WSL2
+none            3.9G  4.0K  3.9G   1% /mnt/wsl
+drivers         477G  242G  235G  51% /usr/lib/wsl/drivers
+/dev/sdd       1007G  1.4G  955G   1% /
+none            3.9G   36K  3.9G   1% /mnt/wslg
+none            3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs          3.9G  2.8M  3.9G   1% /init
+none            3.9G  512K  3.9G   1% /run
+none            3.9G     0  3.9G   0% /run/lock
+none            3.9G     0  3.9G   0% /run/shm
+none            3.9G   80K  3.9G   1% /mnt/wslg/versions.txt
+none            3.9G   80K  3.9G   1% /mnt/wslg/doc
+C:\             477G  242G  235G  51% /mnt/c
+tmpfs           787M   20K  787M   1% /run/user/1000
+```
+
+### 03. `nproc`
+
+```bash
+nproc
+```
+
+**Output:**
+
+```text
+8
+```
+
+### 04. `lscpu | grep 'Model name'`
+
+```bash
+lscpu | grep 'Model name'
+```
+
+**Output:**
+
+```text
+Model name:                              Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
+```
+
+### 05. `uptime`
+
+```bash
+uptime
+```
+
+**Output:**
+
+```text
+ 23:40:01 up  2:07,  1 user,  load average: 3.98, 1.07, 0.36
+```
+
