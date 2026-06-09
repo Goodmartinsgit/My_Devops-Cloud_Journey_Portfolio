@@ -1,43 +1,73 @@
 #!/bin/bash
 # log-task.sh - Helper script for DevOps portfolio tasks to record command outputs.
-# Usage: ./log-task.sh "<command>" "<description>" [output_file]
-# Example: ./log-task.sh "df -h" "Checking disk space" "verification.log"
+# Usage:  ./log-task.sh "<command(s)>" "<description>" [output_file]
+# Single: ./log-task.sh "df -h" "Check disk space" "verification.log"
+# Multi:  ./log-task.sh "df -h; free -h; uname -a" "System snapshot" "verification.log"
 
 COMMAND="$1"
 DESCRIPTION="$2"
 OUTPUT_FILE="${3:-verification.log}"
 
 if [ -z "$COMMAND" ] || [ -z "$DESCRIPTION" ]; then
-    echo "Usage: $0 \"<command>\" \"<description>\" [output_file]"
-    echo "Example: $0 \"df -h\" \"Check disk partition usage\" \"verification.log\""
+    echo "Usage: $0 \"<command(s)>\" \"<description>\" [output_file]"
+    echo "Example: $0 \"df -h; free -h\" \"Check system resources\" \"verification.log\""
     exit 1
 fi
 
 TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
-
-# Ensure the parent directory of the output file exists
 mkdir -p "$(dirname "$OUTPUT_FILE")"
 
-echo "=== Running Command: $COMMAND ==="
-echo "Description: $DESCRIPTION"
+# Helper: append a line to the log file
+log() { printf '%s\n' "$1" >> "$OUTPUT_FILE"; }
 
-# Prepare the markdown formatted entry
-{
-    echo "### 🔍 $DESCRIPTION"
-    echo "*   **Timestamp**: $TIMESTAMP"
-    echo "*   **Command Run**:"
-    echo "    \`\`\`bash"
-    echo "    $COMMAND"
-    echo "    \`\`\`"
-    echo "*   **Console Output**:"
-    echo "    \`\`\`text"
-    
-    # Run the command, capturing both stdout and stderr, and indent it for clean markdown nesting
-    eval "$COMMAND" 2>&1 | sed 's/^/    /'
-    
-    echo "    \`\`\`"
-    echo ""
-} >> "$OUTPUT_FILE"
+# --- Parse commands: split on ';', trim whitespace, drop empties ---
+IFS=';' read -ra _RAW <<< "$COMMAND"
+CMDS=()
+for _raw in "${_RAW[@]}"; do
+    _trimmed="$(echo "$_raw" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')"
+    [ -n "$_trimmed" ] && CMDS+=("$_trimmed")
+done
 
-echo "Result appended to $OUTPUT_FILE"
-echo "================================="
+TOTAL=${#CMDS[@]}
+
+# --- Terminal feedback ---
+echo ""
+echo "┌──────────────────────────────────────────────────"
+echo "│  📋 $DESCRIPTION"
+echo "│  🕐 $TIMESTAMP"
+echo "│  📂 $OUTPUT_FILE"
+printf "│  🔢 %d command(s) queued\n" "$TOTAL"
+echo "└──────────────────────────────────────────────────"
+
+# --- Write task section header to log ---
+log ""
+log "---"
+log ""
+log "## 🔍 $DESCRIPTION"
+log ""
+log "> **Timestamp:** \`$TIMESTAMP\`"
+log ""
+
+# --- Run and log each command individually ---
+i=1
+for CMD in "${CMDS[@]}"; do
+    printf "  [%d/%d] Running: %s\n" "$i" "$TOTAL" "$CMD"
+
+    log "### $(printf '%02d' "$i"). \`$CMD\`"
+    log ""
+    log "\`\`\`bash"
+    log "$CMD"
+    log "\`\`\`"
+    log ""
+    log "**Output:**"
+    log ""
+    log "\`\`\`text"
+    eval "$CMD" >> "$OUTPUT_FILE" 2>&1
+    log "\`\`\`"
+    log ""
+
+    i=$(( i + 1 ))
+done
+
+echo "  ✔  $TOTAL entry/entries appended → $OUTPUT_FILE"
+echo ""
