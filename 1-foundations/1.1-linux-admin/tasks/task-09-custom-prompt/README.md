@@ -272,3 +272,10 @@ sudo -u devops-user bash -c 'source ~/.bashrc && echo $PS1'
 
 ```
 
+## Result
+
+Custom prompt successfully displays git branch in colour.
+
+![Custom Prompt](screenshots/custom-prompt.png)
+
+
