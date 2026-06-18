@@ -31,7 +31,7 @@ This subdirectory contains my solutions, script files, and verification logs for
 
 ---
 
-## 🚀 How I Verified These Tasks myself
+## 🚀 How I Verified These Tasks
 
 All 12 tasks were successfully executed and verified by me (**Martins Balogun**) on an **Ubuntu 24.04 LTS** environment running inside **WSL2** (on my Windows host machine `ELDAVED-GLOBAL`).
 
