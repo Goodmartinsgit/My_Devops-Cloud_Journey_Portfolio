@@ -23,15 +23,24 @@ This subdirectory contains my solutions, script files, and verification logs for
 
 ---
 
-## 🚀 How to Run These Tasks
+## 📚 Key Topics Studied
+* **OS Exploration & Resource Auditing**: Verifying distribution, checking kernel versions, CPU architecture, RAM allocations, and disk layouts.
+* **Filesystem & Permission Audits**: Auditing `/etc`, `/var/log`, `/proc`, `/sys`, creating new users, configuring passwordless sudoers rules, and setting secure file permissions.
+* **Service Administration**: Managing systemd services (Nginx), auditing status, logs, and processes with `systemctl` and `journalctl`.
+* **Shell Customization & Automation**: Writing bash cron scripts, configuring custom PS1 prompts with Git branch status, custom logrotate configurations, and custom systemd timers.
 
-All these tasks were executed on an **Ubuntu 24.04 LTS** server inside a WSL2 environment.
+---
 
-1.  **Helper Script**: To log commands run during the verification steps, run the helper utility:
+## 🚀 How I Verified These Tasks
+
+All 12 tasks were successfully executed and verified by me (**Martins Balogun**) on an **Ubuntu 24.04 LTS** environment running inside **WSL2** (on my Windows host machine `ELDAVED-GLOBAL`).
+
+1.  **Command Logging**: I utilized the custom helper utility `utils/log-task.sh` to capture command executions and append real outputs directly into each task's `verification.log` file:
     ```bash
     ../../utils/log-task.sh "uptime" "Checking uptime for verification" "./tasks/task-01-explore-system/verification.log"
     ```
-2.  **Validation**: Read the individual `README.md` files in each task folder to understand the requirements, configuration changes made, and scripts written.
+2.  **Reviewing Solutions**: Navigate to each individual task folder to view the exact scripts, configurations, and verification logs showing my outputs.
 
 ---
 [⬅️ Back to Foundations Module](../README.md)
+
