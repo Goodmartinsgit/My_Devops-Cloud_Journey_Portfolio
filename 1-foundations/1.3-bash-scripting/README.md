@@ -41,7 +41,7 @@ This subdirectory will store code, automation scripts, and verification logs sho
 
 ---
 
-## 📚 Key Topics Studied
+##  Key Topics Studied
 * **Script Lifecycles**: Shebang definitions, execute permissions (`chmod +x`), and environment `$PATH` setups.
 * **Flow Control & Logic**: Loops (`for`, `while`), conditionals (`if`/`case`), and array definitions (indexed vs associative maps).
 * **Robust Defenses**: Sane scripting options (`set -euo pipefail`), custom exit codes, and cleanup routines using signals (`trap`).

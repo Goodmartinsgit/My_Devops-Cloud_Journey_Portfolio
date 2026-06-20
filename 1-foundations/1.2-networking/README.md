@@ -61,7 +61,7 @@ This subdirectory will store configurations, diagnostic reports, and logs for ne
 
 ---
 
-## 📚 Key Topics Studied
+##  Key Topics Studied
 * **Network Layers**: OSI 7-Layer Model vs. TCP/IP 4-Layer Model.
 * **IP Protocol Suite**: IPv4 subnet architecture, CIDR, private address blocks (RFC 1918), and IPv6 expansion.
 * **Core Internet Utilities**: Domain Name Systems (recursive vs authoritative), NAT rules, and common TCP/UDP ports.

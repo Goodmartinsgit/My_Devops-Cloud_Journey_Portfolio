@@ -25,7 +25,7 @@ This subdirectory will store Python script solutions, libraries configs, and log
 
 ---
 
-## 📚 Key Topics Studied
+##  Key Topics Studied
 * **Script Structure**: Variables, data structures (lists, dicts), flow control, functions, and exceptions.
 * **System Operations**: Interfacing with the operating system using standard modules (`os`, `sys`, `subprocess`).
 * **Format Parsers**: Reading, transforming, and writing `JSON`, `CSV`, and `YAML` files.

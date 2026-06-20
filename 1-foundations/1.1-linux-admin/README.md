@@ -23,7 +23,7 @@ This subdirectory contains my solutions, script files, and verification logs for
 
 ---
 
-## 📚 Key Topics Studied
+## Key Topics Studied
 * **OS Exploration & Resource Auditing**: Verifying distribution, checking kernel versions, CPU architecture, RAM allocations, and disk layouts.
 * **Filesystem & Permission Audits**: Auditing `/etc`, `/var/log`, `/proc`, `/sys`, creating new users, configuring passwordless sudoers rules, and setting secure file permissions.
 * **Service Administration**: Managing systemd services (Nginx), auditing status, logs, and processes with `systemctl` and `journalctl`.

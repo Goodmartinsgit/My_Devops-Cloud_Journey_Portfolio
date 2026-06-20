@@ -61,7 +61,7 @@ This subdirectory will document version control practices, repository branching 
 
 ---
 
-## 📚 Key Topics Studied
+##  Key Topics Studied
 * **Working Spaces**: Staging indexes, directories mapping, tracking logic, and git status codes.
 * **Integrations**: Standard merge vs interactive rebase, cherry-pick commits, and git stash commands.
 * **Collaboration & Policies**: Branch protection rules, pull requests reviews, and merge strategies (squash vs fast-forward).
