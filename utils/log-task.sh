@@ -33,17 +33,17 @@ TOTAL=${#CMDS[@]}
 # --- Terminal feedback ---
 echo ""
 echo "┌──────────────────────────────────────────────────"
-echo "│  📋 $DESCRIPTION"
-echo "│  🕐 $TIMESTAMP"
-echo "│  📂 $OUTPUT_FILE"
-printf "│  🔢 %d command(s) queued\n" "$TOTAL"
+echo "│   $DESCRIPTION"
+echo "│   $TIMESTAMP"
+echo "│   $OUTPUT_FILE"
+printf "│   %d command(s) queued\n" "$TOTAL"
 echo "└──────────────────────────────────────────────────"
 
 # --- Write task section header to log ---
 log ""
 log "---"
 log ""
-log "## 🔍 $DESCRIPTION"
+log "##  $DESCRIPTION"
 log ""
 log "> **Timestamp:** \`$TIMESTAMP\`"
 log ""
