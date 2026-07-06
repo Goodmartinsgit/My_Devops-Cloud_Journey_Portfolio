@@ -1,0 +1,148 @@
+
+---
+
+##  Installed UFW and set default policies: deny all incoming, allow all outgoing
+
+> **Timestamp:** `2026-07-06 15:48:22`
+
+### 01. `sudo apt install ufw -y`
+
+```bash
+sudo apt install ufw -y
+```
+
+**Output:**
+
+```text
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ufw is already the newest version (0.36.2-6).
+0 upgraded, 0 newly installed, 0 to remove and 132 not upgraded.
+```
+
+### 02. `sudo ufw default deny incoming`
+
+```bash
+sudo ufw default deny incoming
+```
+
+**Output:**
+
+```text
+Default incoming policy changed to 'deny'
+(be sure to update your rules accordingly)
+```
+
+### 03. `sudo ufw default allow outgoing`
+
+```bash
+sudo ufw default allow outgoing
+```
+
+**Output:**
+
+```text
+Default outgoing policy changed to 'allow'
+(be sure to update your rules accordingly)
+```
+
+### 04. `sudo ufw status`
+
+```bash
+sudo ufw status
+```
+
+**Output:**
+
+```text
+Status: active
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW       Anywhere                  
+80/tcp                     ALLOW       Anywhere                  
+443/tcp                    ALLOW       Anywhere                  
+22/tcp (v6)                ALLOW       Anywhere (v6)             
+80/tcp (v6)                ALLOW       Anywhere (v6)             
+443/tcp (v6)               ALLOW       Anywhere (v6)             
+
+```
+
+
+---
+
+##  Installed UFW and set default policies: deny all incoming, allow all outgoing
+
+> **Timestamp:** `2026-07-06 15:51:27`
+
+### 01. `sudo apt install ufw -y`
+
+```bash
+sudo apt install ufw -y
+```
+
+**Output:**
+
+```text
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ufw is already the newest version (0.36.2-6).
+0 upgraded, 0 newly installed, 0 to remove and 132 not upgraded.
+```
+
+### 02. `sudo ufw default deny incoming`
+
+```bash
+sudo ufw default deny incoming
+```
+
+**Output:**
+
+```text
+Default incoming policy changed to 'deny'
+(be sure to update your rules accordingly)
+```
+
+### 03. `sudo ufw default allow outgoing`
+
+```bash
+sudo ufw default allow outgoing
+```
+
+**Output:**
+
+```text
+Default outgoing policy changed to 'allow'
+(be sure to update your rules accordingly)
+```
+
+### 04. `sudo ufw status`
+
+```bash
+sudo ufw status
+```
+
+**Output:**
+
+```text
+Status: active
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW       Anywhere                  
+80/tcp                     ALLOW       Anywhere                  
+443/tcp                    ALLOW       Anywhere                  
+22/tcp (v6)                ALLOW       Anywhere (v6)             
+80/tcp (v6)                ALLOW       Anywhere (v6)             
+443/tcp (v6)               ALLOW       Anywhere (v6)             
+
+```
+

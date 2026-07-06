@@ -1,0 +1,223 @@
+== Info: Host example.com:443 was resolved.
+== Info: IPv6: 2606:4700:10::6814:179a, 2606:4700:10::ac42:93f3
+== Info: IPv4: 172.66.147.243, 104.20.23.154
+== Info:   Trying 172.66.147.243:443...
+== Info: Connected to example.com (172.66.147.243) port 443
+== Info: ALPN: curl offers h2,http/1.1
+=> Send SSL data, 5 bytes (0x5)
+0000: .....
+== Info: TLSv1.3 (OUT), TLS handshake, Client hello (1):
+=> Send SSL data, 512 bytes (0x200)
+0000: ......u....&8....FA.1#..]N.;Xp...p$c.. ..NQ.V5.....F...T........
+0040: U...K...>.......,.0.........+./...$.(.k.#.'.g.....9.....3.....=.
+0080: <.5./.....u.........example.com.................................
+00c0: ........h2.http/1.1.........1.....*.(...........................
+0100: ..............+........-.....3.&.$... ......8.ct1.K.*sQP...4.v..
+0140: .s..zu..........................................................
+0180: ................................................................
+01c0: ................................................................
+== Info:  CAfile: /etc/ssl/certs/ca-certificates.crt
+== Info:  CApath: /etc/ssl/certs
+<= Recv SSL data, 5 bytes (0x5)
+0000: ....z
+== Info: TLSv1.3 (IN), TLS handshake, Server hello (2):
+<= Recv SSL data, 122 bytes (0x7a)
+0000: ...v..>.!.N.*..$&{...C.Q8...%........z ..NQ.V5.....F...T........
+0040: U...K........3.$... .y(I=..2J.......@.h&> ..}K0.%*.J.+....
+<= Recv SSL data, 5 bytes (0x5)
+0000: .....
+<= Recv SSL data, 5 bytes (0x5)
+0000: .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+== Info: TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+<= Recv SSL data, 19 bytes (0x13)
+0000: .................h2
+== Info: TLSv1.3 (IN), TLS handshake, Certificate (11):
+<= Recv SSL data, 3687 bytes (0xe67)
+0000: ...c..._...0...0............?.%{.3K.)U.o..0...*.H.=...0Q1.0...U.
+0040: ...US1.0...U....SSL Corporation1(0&..U....Cloudflare TLS Issuing
+0080:  ECC CA 30...260531213912Z..260829214126Z0.1.0...U....example.co
+00c0: m0Y0...*.H.=....*.H.=....B..w+...h..&e..W..@R.- .L<..u\n. .(F.f.
+0100: ..6..SZ...........7....9........0..|0...U.......0.0...U.#..0....
+0140: .....JM.A.."..2.>.f0l..+........`0^09..+.....0..-http://i.cf-i.s
+0180: sl.com/Cloudflare-TLS-I-E3.cer0!..+.....0...http://o.cf-i.ssl.co
+01c0: m0%..U....0...example.com..*.example.com0#..U. ..0.0...g.....0..
+0200: .+......0....0...U.%..0...+.......0S..U...L0J0H.F.D.Bhttp://c.cf
+0240: -i.ssl.com/ae801ed1c55bb579d79208b0d772acfb8cc3a208.crl0...U....
+0280: .......0...+......K,....0.....+.....y............v..NC........$&
+02c0: ..e..._8..?rg}U7.........1......G0E.!...BL.e..$=y...I7;k.E......
+0300: .X..... v}.........}.UN...O....v"........v.........5k.?jz.m.:NC.
+0340: .F...9u..........1......G0E.!..s..-X.k>..o,.O.......?....$.WM3. 
+0380: .....I!ic!Zw..V.c>Jz..D.h.L...4.0...*.H.=....H.0E.!....f.... ...
+03c0: `...\...O.k.....^.p.. .....Q.`..a..&UjP.Z.PAo....;.##......0...0
+0400: ..i.......1........3f.t?.'0...*.H.=...0O1.0...U....US1.0...U....
+0440: SSL Corporation1&0$..U....SSL.com TLS Transit ECC CA R20...25052
+0480: 9194945Z..350527194944Z0Q1.0...U....US1.0...U....SSL Corporation
+04c0: 1(0&..U....Cloudflare TLS Issuing ECC CA 30Y0...*.H.=....*.H.=..
+0500: ..B.......#B.&.p.....r.>]YR.....%..w......+?@..r...@R..I..q.~...
+0540: EQ.Dt...#0...0...U.......0.......0...U.#..0...2...X....<.Ui3....
+0580: ..0H..+........<0:08..+.....0..,http://cert.ssl.com/SSL.com-TLS-
+05c0: T-ECC-R2.cer0...U. ..0.0...U. .0...U.%..0...+.........+.......0=
+0600: ..U...60402.0...,http://crls.ssl.com/SSL.com-TLS-T-ECC-R2.crl0..
+0640: .U............JM.A.."..2.>.f0...U...........0...*.H.=....g.0d.0d
+0680: [.`L....q..L[7...).?....c8.gf...,@.....d.96.SNN.0(..N.~.XU..Q.{.
+06c0: rk.....d.@nm..oo.>.....@.?^oM..q.....80..40..........`M.....t..X
+0700: S.,_.0...*.H.=...0N1.0...U....US1.0...U....SSL Corporation1%0#..
+0740: U....SSL.com TLS ECC Root CA 20220...221021170223Z..371017170222
+0780: Z0O1.0...U....US1.0...U....SSL Corporation1&0$..U....SSL.com TLS
+07c0:  Transit ECC CA R20v0...*.H.=....+...".b..d.}..S\.....#...,.c..(
+0800: h......h.w+.v..P..Y(-o.6.....L".....?.zs:..+./:7....-E.sr.e_x!=.
+0840: .f?G..)......Y0..U0...U.......0.......0...U.#..0...../..+..T{.V.
+0880: &_g8...0L..+........@0>0<..+.....0..0http://cert.ssl.com/SSLcom-
+08c0: TLS-Root-2022-ECC.cer0?..U. .80604..U. .0,0*..+.........https://
+0900: www.ssl.com/repository0...U.%..0...+.........+.......0A..U...:08
+0940: 06.4.2.0http://crls.ssl.com/SSLcom-TLS-Root-2022-ECC.crl0...U...
+0980: ...2...X....<.Ui3......0...U...........0...*.H.=....i.0f.1..JB>{
+09c0: g-.Y.7..F)}.>..lK..x.>.5..d..b"..8..o..F....1..W..E...)Ph$......
+0a00: i.*..@.Yg.,..Z.X.....W....K.......B0..>0..&........=.`....&...(.
+0a40: ..0...*.H........0{1.0...U....GB1.0...U....Greater Manchester1.0
+0a80: ...U....Salford1.0...U....Comodo CA Limited1!0...U....AAA Certif
+0ac0: icate Services0...250801000000Z..281231235959Z0N1.0...U....US1.0
+0b00: ...U....SSL Corporation1%0#..U....SSL.com TLS ECC Root CA 20220v
+0b40: 0...*.H.=....+...".b..E)5s...#..}..M.[6.*,S.`.5.$f&i....].@.....
+0b80: p...Q(]....<......+..BXYg..'.d.O..MI.{O...........K.T.....0...0.
+0bc0: ..U.#..0......#>......).....0..0...U......../..+..T{.V.&_g8...0.
+0c00: ..U...........0...U.......0.......0...U.%..0...+.........+......
+0c40: .0....U. ...0..0...g....0...g.....0...g.....0...g.....0...+.....
+0c80: .0....0...+......0....0...+......0....0...+......0....0...+.....
+0cc0: .0....0...+......0....0C..U...<0:08.6.4.2http://crl.comodoca.com
+0d00: /AAACertificateServices.crl04..+........(0&0$..+.....0...http://
+0d40: ocsp.comodoca.com0...*.H.............C.p.K.$<.8(...F.++.`X.W[k..
+0d80: NE..BV......R....n....C.T..f....Y.....<R..C>.a.^..|.,..P0Idt<>.C
+0dc0: ....[.k..&..U.'.....D$..`.....c.v.~..3.wX..U..t5...wBIg6........
+0e00: .q2...p..=.sP."..{?_>.j4..H...]QF..v................4o5..kZ0S'T.
+0e40: ..HZi.M\..(.2...+9..e..I.'@.7>. .&j....
+== Info: TLSv1.3 (IN), TLS handshake, CERT verify (15):
+<= Recv SSL data, 80 bytes (0x50)
+0000: ...L...H0F.!...i...........I.e....'.'...^.....!...b.:......"-..-
+0040: ...pW..A..;..#R.
+== Info: TLSv1.3 (IN), TLS handshake, Finished (20):
+<= Recv SSL data, 52 bytes (0x34)
+0000: ...0*..~7...K.P]......u.5.^.>]o...".................
+=> Send SSL data, 5 bytes (0x5)
+0000: .....
+== Info: TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+=> Send SSL data, 1 bytes (0x1)
+0000: .
+=> Send SSL data, 5 bytes (0x5)
+0000: ....E
+=> Send SSL data, 1 bytes (0x1)
+0000: .
+== Info: TLSv1.3 (OUT), TLS handshake, Finished (20):
+=> Send SSL data, 52 bytes (0x34)
+0000: ...0.<]...2BL....j=......O.._.@..'X.5...+-...}.E!F..
+== Info: SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384 / X25519 / id-ecPublicKey
+== Info: ALPN: server accepted h2
+== Info: Server certificate:
+== Info:  subject: CN=example.com
+== Info:  start date: May 31 21:39:12 2026 GMT
+== Info:  expire date: Aug 29 21:41:26 2026 GMT
+== Info:  subjectAltName: host "example.com" matched cert's "example.com"
+== Info:  issuer: C=US; O=SSL Corporation; CN=Cloudflare TLS Issuing ECC CA 3
+== Info:  SSL certificate verify ok.
+== Info:   Certificate level 0: Public key type EC/prime256v1 (256/128 Bits/secBits), signed using ecdsa-with-SHA256
+== Info:   Certificate level 1: Public key type EC/prime256v1 (256/128 Bits/secBits), signed using ecdsa-with-SHA384
+== Info:   Certificate level 2: Public key type EC/secp384r1 (384/192 Bits/secBits), signed using ecdsa-with-SHA384
+== Info:   Certificate level 3: Public key type EC/secp384r1 (384/192 Bits/secBits), signed using ecdsa-with-SHA384
+=> Send SSL data, 5 bytes (0x5)
+0000: ....Q
+=> Send SSL data, 1 bytes (0x1)
+0000: .
+== Info: using HTTP/2
+== Info: [HTTP/2] [1] OPENED stream for https://example.com/
+== Info: [HTTP/2] [1] [:method: GET]
+== Info: [HTTP/2] [1] [:scheme: https]
+== Info: [HTTP/2] [1] [:authority: example.com]
+== Info: [HTTP/2] [1] [:path: /]
+== Info: [HTTP/2] [1] [user-agent: curl/8.5.0]
+== Info: [HTTP/2] [1] [accept: */*]
+=> Send SSL data, 5 bytes (0x5)
+0000: ....6
+=> Send SSL data, 1 bytes (0x1)
+0000: .
+=> Send header, 72 bytes (0x48)
+0000: GET / HTTP/2
+000e: Host: example.com
+0021: User-Agent: curl/8.5.0
+0039: Accept: */*
+0046: 
+<= Recv SSL data, 5 bytes (0x5)
+0000: .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+== Info: TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+<= Recv SSL data, 230 bytes (0xe6)
+0000: ....... ..VA.......0...B..6TfL..l..2...M...U..z..~X}..+....L.ey.
+0040: ..iL^.b.4.$.."....P......B..$..}.b......'...[......W.t...x.e.3..
+0080: ...r|E=..K.a.@..w.3.3 .]...&).....S....>.....~........Q.6.....8d
+00c0: ....6.H.r.r.....{.....d..."..).L......
+== Info: TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+<= Recv SSL data, 230 bytes (0xe6)
+0000: ....... ..[V.......0...B..6TfL..`.......I...4...K._.......V....\
+0040: X..c4E..tZ.k&....}.5....y......8mB..w7......U`().......5......t.
+0080: ...nQ?.b..5.`....l.Er....:.h..I...[..2C...vb.%.M.C.4.....2..^..g
+00c0: ......V.C0.>.KH..1r...O.c.S."z'.......
+== Info: old SSL session ID is stale, removing
+<= Recv SSL data, 5 bytes (0x5)
+0000: ....9
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+<= Recv SSL data, 5 bytes (0x5)
+0000: .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+<= Recv SSL data, 5 bytes (0x5)
+0000: .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+<= Recv SSL data, 5 bytes (0x5)
+0000: ....I
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+<= Recv SSL data, 5 bytes (0x5)
+0000: .....
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+=> Send SSL data, 5 bytes (0x5)
+0000: .....
+=> Send SSL data, 1 bytes (0x1)
+0000: .
+<= Recv header, 13 bytes (0xd)
+0000: HTTP/2 200 
+<= Recv header, 37 bytes (0x25)
+0000: date: Mon, 06 Jul 2026 15:41:47 GMT
+<= Recv header, 25 bytes (0x19)
+0000: content-type: text/html
+<= Recv header, 20 bytes (0x14)
+0000: server: cloudflare
+<= Recv header, 46 bytes (0x2e)
+0000: last-modified: Wed, 01 Jul 2026 17:50:18 GMT
+<= Recv header, 18 bytes (0x12)
+0000: allow: GET, HEAD
+<= Recv header, 22 bytes (0x16)
+0000: accept-ranges: bytes
+<= Recv header, 11 bytes (0xb)
+0000: age: 5345
+<= Recv header, 22 bytes (0x16)
+0000: cf-cache-status: HIT
+<= Recv header, 30 bytes (0x1e)
+0000: cf-ray: a16fb7344bd86533-LHR
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 559 bytes (0x22f)
+0000: <!doctype html><html lang="en"><head><title>Example Domain</titl
+0040: e><link rel="icon" href="data:,"><meta name="viewport" content="
+0080: width=device-width, initial-scale=1"><style>body{background:#eee
+00c0: ;width:60vw;margin:15vh auto;font-family:system-ui,sans-serif}h1
+0100: {font-size:1.5em}div{opacity:0.8}a:link,a:visited{color:#348}</s
+0140: tyle></head><body><div><h1>Example Domain</h1><p>This domain is 
+0180: for use in documentation examples without needing permission. Av
+01c0: oid use in operations.</p><p><a href="https://iana.org/domains/e
+0200: xample">Learn more</a></p></div></body></html>.
+== Info: Connection #0 to host example.com left intact
