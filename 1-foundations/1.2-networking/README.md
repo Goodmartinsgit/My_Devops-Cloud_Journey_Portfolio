@@ -1,4 +1,4 @@
-# 🌐 Sub-Module 1.2: Networking Fundamentals
+#  Sub-Module 1.2: Networking Fundamentals
 
 This subdirectory stores configurations, diagnostic reports, packet captures, firewall rule sets, and verification logs for all networking-focused tasks. These tasks validate foundational knowledge in routing, DNS resolution, packet analysis, SSH hardening, firewall management, and encrypted tunnelling — the bread-and-butter skill set for any DevOps or cloud engineer diagnosing real infrastructure.
 
@@ -6,7 +6,7 @@ All tasks were completed by **Martins Balogun** on an **Ubuntu 24.04 LTS** envir
 
 ---
 
-## 📋 Task Checklist & Progress
+##  Task Checklist & Progress
 
 | # | Task | Key Tools / Commands | Status | Folder |
 | :-- | :-- | :-- | :---: | :---: |
@@ -25,7 +25,7 @@ All tasks were completed by **Martins Balogun** on an **Ubuntu 24.04 LTS** envir
 
 ---
 
-## 📦 Packages Installed
+##  Packages Installed
 
 All packages below were installed during the completion of tasks in this sub-module. Each entry includes the exact install command used, a brief description of what the package does, and the task it was required for.
 
@@ -106,7 +106,7 @@ sudo apt install wireguard -y
 
 ---
 
-## 🔑 Key Topics Studied
+##  Key Topics Studied
 
 * **Network Layers**: OSI 7-Layer Model vs. TCP/IP 4-Layer Model.
 * **IP Protocol Suite**: IPv4 subnet architecture, CIDR notation, private address blocks (RFC 1918), and IPv6 addressing.
@@ -119,4 +119,4 @@ sudo apt install wireguard -y
 
 ---
 
-[⬅️ Back to Foundations Module](../README.md)
+[⬅ Back to Foundations Module](../README.md)

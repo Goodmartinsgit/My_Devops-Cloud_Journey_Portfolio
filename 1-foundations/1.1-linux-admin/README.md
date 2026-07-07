@@ -1,10 +1,10 @@
-# 🐧 Sub-Module 1.1: Linux System Administration
+#  Sub-Module 1.1: Linux System Administration
 
 This subdirectory contains my solutions, script files, and verification logs for the 12 practical tasks in the **Linux System Administration** chapter. These tasks cover OS exploration, filesystem hierarchy, user privileges, file security, systemd services, shell scripting, log archives, custom shells, disk reporting, log rotation, and systemd automation.
 
 ---
 
-## 📋 Task Index & Completion Status
+##  Task Index & Completion Status
 
 | Task | Objective | Key Tools / Commands | Status | Links |
 | :--- | :--- | :--- | :---: | :---: |
@@ -31,7 +31,7 @@ This subdirectory contains my solutions, script files, and verification logs for
 
 ---
 
-## 🚀 How I Verified These Tasks
+##  How I Verified These Tasks
 
 All 12 tasks were successfully executed and verified by me (**Martins Balogun**) on an **Ubuntu 24.04 LTS** environment running inside **WSL2** (on my Windows host machine `ELDAVED-GLOBAL`).
 
@@ -41,7 +41,7 @@ All 12 tasks were successfully executed and verified by me (**Martins Balogun**)
     ```
 2.  **Reviewing Solutions**: Navigate to each individual task folder to view the exact scripts, configurations, and verification logs showing my outputs.
 
-## 📦 Packages Installed
+##  Packages Installed
 
 The table below lists every package explicitly installed via `apt` during the completion of these tasks, followed by the key built-in system tools that were central to the work.
 
@@ -158,5 +158,5 @@ These tools are pre-installed on Ubuntu 24.04 and required no explicit installat
 
 ---
 
-[⬅️ Back to Foundations Module](../README.md)
+[⬅ Back to Foundations Module](../README.md)
 
