@@ -23,24 +23,6 @@ This subdirectory contains my solutions, script files, and verification logs for
 
 ---
 
-## Key Topics Studied
-* **OS Exploration & Resource Auditing**: Verifying distribution, checking kernel versions, CPU architecture, RAM allocations, and disk layouts.
-* **Filesystem & Permission Audits**: Auditing `/etc`, `/var/log`, `/proc`, `/sys`, creating new users, configuring passwordless sudoers rules, and setting secure file permissions.
-* **Service Administration**: Managing systemd services (Nginx), auditing status, logs, and processes with `systemctl` and `journalctl`.
-* **Shell Customization & Automation**: Writing bash cron scripts, configuring custom PS1 prompts with Git branch status, custom logrotate configurations, and custom systemd timers.
-
----
-
-##  How I Verified These Tasks
-
-All 12 tasks were successfully executed and verified by me (**Martins Balogun**) on an **Ubuntu 24.04 LTS** environment running inside **WSL2** (on my Windows host machine `ELDAVED-GLOBAL`).
-
-1.  **Command Logging**: I utilized the custom helper utility `utils/log-task.sh` to capture command executions and append real outputs directly into each task's `verification.log` file:
-    ```bash
-    ../../utils/log-task.sh "uptime" "Checking uptime for verification" "./tasks/task-01-explore-system/verification.log"
-    ```
-2.  **Reviewing Solutions**: Navigate to each individual task folder to view the exact scripts, configurations, and verification logs showing my outputs.
-
 ##  Packages Installed
 
 The table below lists every package explicitly installed via `apt` during the completion of these tasks, followed by the key built-in system tools that were central to the work.
@@ -155,6 +137,26 @@ These tools are pre-installed on Ubuntu 24.04 and required no explicit installat
 **What it does:** Automatically rotates, compresses, deletes, and mails application log files based on a policy defined in `/etc/logrotate.d/`. Policies control rotation frequency (`daily`, `weekly`), the number of archives to retain (`rotate 14`), compression (`compress`, `delaycompress`), and post-rotation scripts.
 
 **Why relevant:** Task 11 wrote a custom policy to `/etc/logrotate.d/myapp`, then used `logrotate --debug` to test it in dry-run mode and `logrotate --force` to trigger an actual rotation, verifying that `app.log.1` was produced.
+
+---
+
+##  How I Verified These Tasks
+
+All 12 tasks were successfully executed and verified by me (**Martins Balogun**) on an **Ubuntu 24.04 LTS** environment running inside **WSL2** (on my Windows host machine `ELDAVED-GLOBAL`).
+
+1.  **Command Logging**: I utilized the custom helper utility `utils/log-task.sh` to capture command executions and append real outputs directly into each task's `verification.log` file:
+    ```bash
+    ../../utils/log-task.sh "uptime" "Checking uptime for verification" "./tasks/task-01-explore-system/verification.log"
+    ```
+2.  **Reviewing Solutions**: Navigate to each individual task folder to view the exact scripts, configurations, and verification logs showing my outputs.
+
+---
+
+## Key Topics Studied
+* **OS Exploration & Resource Auditing**: Verifying distribution, checking kernel versions, CPU architecture, RAM allocations, and disk layouts.
+* **Filesystem & Permission Audits**: Auditing `/etc`, `/var/log`, `/proc`, `/sys`, creating new users, configuring passwordless sudoers rules, and setting secure file permissions.
+* **Service Administration**: Managing systemd services (Nginx), auditing status, logs, and processes with `systemctl` and `journalctl`.
+* **Shell Customization & Automation**: Writing bash cron scripts, configuring custom PS1 prompts with Git branch status, custom logrotate configurations, and custom systemd timers.
 
 ---
 

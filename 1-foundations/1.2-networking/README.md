@@ -106,6 +106,18 @@ sudo apt install wireguard -y
 
 ---
 
+##  How I Verified These Tasks
+
+All 12 tasks were successfully executed and verified by me (**Martins Balogun**) on an **Ubuntu 24.04 LTS** environment running inside **WSL2** (on my Windows host machine `ELDAVED-GLOBAL`).
+
+1. **Command Logging**: I utilised the custom helper utility `utils/log-task.sh` to capture command executions and append real outputs directly into each task's `README.md` file:
+    ```bash
+    ../../utils/log-task.sh "ip -brief addr show" "Documenting IP and subnet" "./tasks/task-01-document-your-machines-full-network-configuration/README.md"
+    ```
+2. **Reviewing Solutions**: Navigate to each individual task folder to view the exact commands run, their real terminal output, and the verification context captured at the time of execution.
+
+---
+
 ##  Key Topics Studied
 
 * **Network Layers**: OSI 7-Layer Model vs. TCP/IP 4-Layer Model.

@@ -1,4 +1,4 @@
-# Task 8: Find and Archive Recent Log Files
+﻿# Task 8: Find and Archive Recent Log Files
 
 ## Objective
 
@@ -9,7 +9,7 @@ Write a Bash script that searches for system log files modified within the past 
 
 ---
 
-## 🔍 Creating test log files with different timestamps
+## Creating test log files with different timestamps
 
 > **Timestamp:** `2026-06-15 21:49:45`
 
@@ -60,7 +60,7 @@ sudo touch -t 202301010000 /tmp/sample-logs/old.log
 
 ---
 
-## 🔍 Finding .log files modified in the last 7 days
+## Finding .log files modified in the last 7 days
 
 > **Timestamp:** `2026-06-15 21:53:06`
 
@@ -100,7 +100,7 @@ find /tmp/sample-logs -name '*.log' -mtime -7 -type f
 
 ---
 
-## 🔍 Archiving recent .log files into a dated tar.gz
+## Archiving recent .log files into a dated tar.gz
 
 > **Timestamp:** `2026-06-15 21:53:37`
 
@@ -140,7 +140,7 @@ tar: Removing leading `/' from hard link targets
 
 ---
 
-## 🔍 Verifying the log archive contents and size
+## Verifying the log archive contents and size
 
 > **Timestamp:** `2026-06-15 21:54:01`
 
@@ -179,7 +179,7 @@ sudo tar -tvf /projects/devops/backups/logs-$(date +%Y%m%d).tar.gz | head -20
 
 ---
 
-## 🔍 Creating archive-logs.sh script and making it executable
+## Creating archive-logs.sh script and making it executable
 
 > **Timestamp:** `2026-06-15 21:55:01`
 

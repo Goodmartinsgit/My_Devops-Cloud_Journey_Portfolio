@@ -1,4 +1,4 @@
-# Task 11: Configure Logrotate for a Custom Application Log
+﻿# Task 11: Configure Logrotate for a Custom Application Log
 
 ## Objective
 
@@ -9,7 +9,7 @@ Write a logrotate policy for a custom application log to run daily rotations, ma
 
 ---
 
-## 🔍 Creating fake application log and simulating 1000 log entries
+## Creating fake application log and simulating 1000 log entries
 
 > **Timestamp:** `2026-06-16 09:15:57`
 
@@ -88,7 +88,7 @@ ls -lh /var/log/myapp/app.log
 
 ---
 
-## 🔍 Verifying logrotate config written to /etc/logrotate.d/myapp
+## Verifying logrotate config written to /etc/logrotate.d/myapp
 
 > **Timestamp:** `2026-06-16 09:17:24`
 
@@ -119,7 +119,7 @@ cat /etc/logrotate.d/myapp
 
 ---
 
-## 🔍 Testing logrotate configuration in debug mode
+## Testing logrotate configuration in debug mode
 
 > **Timestamp:** `2026-06-16 09:17:45`
 
@@ -179,7 +179,7 @@ not running postrotate script, since no logs were rotated
 
 ---
 
-## 🔍 Forcing logrotate to rotate the myapp log
+## Forcing logrotate to rotate the myapp log
 
 > **Timestamp:** `2026-06-16 09:18:11`
 
@@ -197,7 +197,7 @@ sudo logrotate --force /etc/logrotate.d/myapp
 
 ---
 
-## 🔍 Verifying log rotation - checking for app.log and app.log.1
+## Verifying log rotation - checking for app.log and app.log.1
 
 > **Timestamp:** `2026-06-16 09:19:25`
 

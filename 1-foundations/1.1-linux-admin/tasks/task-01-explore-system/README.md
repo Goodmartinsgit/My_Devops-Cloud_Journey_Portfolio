@@ -1,4 +1,4 @@
-# Task 1: Install Ubuntu 22.04 and Explore Your System
+﻿# Task 1: Install Ubuntu 22.04 and Explore Your System
 
 ## Objective
 
@@ -11,7 +11,7 @@ before any software is installed or configured.
 
 ---
 
-## 🔍 Verifying OS Distribution and Kernel Version
+## Verifying OS Distribution and Kernel Version
 
 > **Timestamp:** `2026-06-09 23:39:40`
 
@@ -69,7 +69,7 @@ Linux ELDAVED-GLOBAL 6.6.114.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Mo
 
 ---
 
-## 🔍 Auditing System Hardware & Resources
+## Auditing System Hardware & Resources
 
 > **Timestamp:** `2026-06-09 23:39:53`
 
@@ -152,7 +152,7 @@ uptime
 
 ---
 
-## 🔍 Verifying OS Distribution and Kernel Version
+## Verifying OS Distribution and Kernel Version
 
 > **Timestamp:** `2026-06-10 23:57:48`
 
@@ -210,7 +210,7 @@ Linux ELDAVED-GLOBAL 6.6.114.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Mo
 
 ---
 
-## 🔍 Auditing System Hardware & Resources
+## Auditing System Hardware & Resources
 
 > **Timestamp:** `2026-06-10 23:57:53`
 
@@ -300,7 +300,7 @@ uptime
 
 ---
 
-## 🔍 Verifying OS Distribution and Kernel Version
+## Verifying OS Distribution and Kernel Version
 
 > **Timestamp:** `2026-06-10 23:57:58`
 
@@ -358,7 +358,7 @@ Linux ELDAVED-GLOBAL 6.6.114.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Mo
 
 ---
 
-## 🔍 Auditing System Hardware & Resources
+## Auditing System Hardware & Resources
 
 > **Timestamp:** `2026-06-10 23:58:02`
 

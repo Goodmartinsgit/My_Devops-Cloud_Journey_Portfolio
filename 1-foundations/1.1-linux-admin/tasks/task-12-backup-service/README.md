@@ -1,4 +1,4 @@
-# Task 12: Create a Custom Systemd Service for Your Backup Script
+﻿# Task 12: Create a Custom Systemd Service for Your Backup Script
 
 ## Objective
 
@@ -9,7 +9,7 @@ Wrap a backup automation script into a systemd service unit, schedule it to run 
 
 ---
 
-## 🔍 Creating system-backup.sh and making it executable
+## Creating system-backup.sh and making it executable
 
 > **Timestamp:** `2026-06-16 09:46:20`
 
@@ -39,7 +39,7 @@ ls -la /projects/devops/scripts/system-backup.sh
 
 ---
 
-## 🔍 Verifying system-backup.service unit file contents
+## Verifying system-backup.service unit file contents
 
 > **Timestamp:** `2026-06-16 09:47:22`
 
@@ -76,7 +76,7 @@ WantedBy=multi-user.target
 
 ---
 
-## 🔍 Reloading systemd daemon to register new service
+## Reloading systemd daemon to register new service
 
 > **Timestamp:** `2026-06-16 09:47:56`
 
@@ -94,7 +94,7 @@ sudo systemctl daemon-reload
 
 ---
 
-## 🔍 Starting system-backup service
+## Starting system-backup service
 
 > **Timestamp:** `2026-06-16 09:48:18`
 
@@ -112,7 +112,7 @@ sudo systemctl start system-backup
 
 ---
 
-## 🔍 Checking system-backup service status
+## Checking system-backup service status
 
 > **Timestamp:** `2026-06-16 09:48:42`
 
@@ -125,7 +125,7 @@ sudo systemctl status system-backup
 **Output:**
 
 ```text
-● system-backup.service - System Backup Service
+ system-backup.service - System Backup Service
      Loaded: loaded (/etc/systemd/system/system-backup.service; disabled; preset: enabled)
      Active: active (exited) since Tue 2026-06-16 09:48:22 WAT; 20s ago
        Docs: file:///projects/devops/scripts/system-backup.sh
@@ -148,7 +148,7 @@ Jun 16 09:48:22 ELDAVED-GLOBAL systemd[1]: Finished system-backup.service - Syst
 
 ---
 
-## 🔍 Checking system-backup service journal logs
+## Checking system-backup service journal logs
 
 > **Timestamp:** `2026-06-16 09:49:05`
 
@@ -196,7 +196,7 @@ Jun 16 09:48:22 ELDAVED-GLOBAL systemd[1]: Finished system-backup.service - Syst
 
 ---
 
-## 🔍 Enabling system-backup service to start on boot
+## Enabling system-backup service to start on boot
 
 > **Timestamp:** `2026-06-16 09:49:21`
 
@@ -215,7 +215,7 @@ Created symlink /etc/systemd/system/multi-user.target.wants/system-backup.servic
 
 ---
 
-## 🔍 Verifying backup files were created and checking backup log
+## Verifying backup files were created and checking backup log
 
 > **Timestamp:** `2026-06-16 09:49:41`
 
@@ -255,7 +255,7 @@ cat /projects/devops/logs/backup.log
 
 ---
 
-## 🔍 Verifying system-backup.timer unit file contents
+## Verifying system-backup.timer unit file contents
 
 > **Timestamp:** `2026-06-16 09:50:52`
 
@@ -285,7 +285,7 @@ WantedBy=timers.target
 
 ---
 
-## 🔍 Enabling system-backup timer and verifying it is scheduled
+## Enabling system-backup timer and verifying it is scheduled
 
 > **Timestamp:** `2026-06-16 09:51:06`
 

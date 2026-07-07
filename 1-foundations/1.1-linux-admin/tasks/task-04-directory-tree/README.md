@@ -1,4 +1,4 @@
-# Task 4: Build a DevOps Project Directory Tree
+﻿# Task 4: Build a DevOps Project Directory Tree
 
 ## Objective
 
@@ -9,7 +9,7 @@ Create a structured project workspace under `/projects/devops/` with dedicated s
 
 ---
 
-## 🔍 setting up the directory structure for a new DevOps project
+## setting up the directory structure for a new DevOps project
 
 > **Timestamp:** `2026-06-13 09:11:17`
 
@@ -34,10 +34,10 @@ tree /projects/devops
 
 ```text
 /projects/devops
-├── backups
-├── configs
-├── logs
-└── scripts
+ backups
+ configs
+ logs
+ scripts
 
 5 directories, 0 files
 ```

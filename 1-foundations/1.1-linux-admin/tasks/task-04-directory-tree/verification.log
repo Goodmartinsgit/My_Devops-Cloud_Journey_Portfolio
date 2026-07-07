@@ -1,7 +1,7 @@
-
+﻿
 ---
 
-## 🔍 setting up the directory structure for a new DevOps project
+## setting up the directory structure for a new DevOps project
 
 > **Timestamp:** `2026-06-13 09:11:17`
 
@@ -26,10 +26,10 @@ tree /projects/devops
 
 ```text
 /projects/devops
-├── backups
-├── configs
-├── logs
-└── scripts
+ backups
+ configs
+ logs
+ scripts
 
 5 directories, 0 files
 ```

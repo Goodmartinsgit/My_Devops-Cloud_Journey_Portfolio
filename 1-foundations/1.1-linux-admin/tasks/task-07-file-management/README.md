@@ -1,4 +1,4 @@
-# Task 7: Write a Script to Create and Selectively Delete Files
+﻿# Task 7: Write a Script to Create and Selectively Delete Files
 
 ## Objective
 
@@ -9,7 +9,7 @@ Write an executable Bash script that automates generating test files, logs file 
 
 ---
 
-## 🔍 Making file-management.sh executable and running it
+## Making file-management.sh executable and running it
 
 > **Timestamp:** `2026-06-15 18:45:39`
 
@@ -39,7 +39,7 @@ Script complete. Check /projects/devops/logs/file-management.log for details.
 
 ---
 
-## 🔍 Verifying file-management.sh results - even-numbered files remaining and log output
+## Verifying file-management.sh results - even-numbered files remaining and log output
 
 > **Timestamp:** `2026-06-15 18:46:46`
 

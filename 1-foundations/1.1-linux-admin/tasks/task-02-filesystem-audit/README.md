@@ -1,4 +1,4 @@
-# Task 2: Navigate the Entire Linux Filesystem
+﻿# Task 2: Navigate the Entire Linux Filesystem
 
 ## Objective
 
@@ -9,7 +9,7 @@ Perform a complete audit of the Linux filesystem directory structure to find whe
 
 ---
 
-## 🔍 Listing all the files in the root directiry with all their informations
+## Listing all the files in the root directiry with all their informations
 
 > **Timestamp:** `2026-06-10 21:21:38`
 
@@ -55,7 +55,7 @@ drwxr-xr-x  13 root root    4096 Feb 20 16:06 var
 
 ---
 
-## 🔍 exploring the majore directories
+## exploring the majore directories
 
 > **Timestamp:** `2026-06-10 21:21:40`
 

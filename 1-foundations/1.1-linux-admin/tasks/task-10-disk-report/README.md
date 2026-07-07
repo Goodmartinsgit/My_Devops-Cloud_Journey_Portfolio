@@ -1,4 +1,4 @@
-# Task 10: Write a Disk Usage Report Script
+﻿# Task 10: Write a Disk Usage Report Script
 
 ## Objective
 
@@ -9,7 +9,7 @@ Build an administrative disk reporting script that compiles partition details, l
 
 ---
 
-## 🔍 Making disk-report.sh executable and running it
+## Making disk-report.sh executable and running it
 
 > **Timestamp:** `2026-06-16 08:42:04`
 
@@ -129,7 +129,7 @@ Old reports cleaned up. Current reports: 2
 
 ---
 
-## 🔍 Verifying disk report output and log file
+## Verifying disk report output and log file
 
 > **Timestamp:** `2026-06-16 08:43:23`
 

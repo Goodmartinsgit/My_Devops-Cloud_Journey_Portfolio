@@ -1,4 +1,4 @@
-# Task 9: Configure a Custom PS1 Prompt with Git Branch
+﻿# Task 9: Configure a Custom PS1 Prompt with Git Branch
 
 ## Objective
 
@@ -9,7 +9,7 @@ Configure a custom Bash prompt (`PS1`) showing username, hostname, current worki
 
 ---
 
-## 🔍 Checking current PS1 prompt value
+## Checking current PS1 prompt value
 
 > **Timestamp:** `2026-06-15 22:10:51`
 
@@ -28,7 +28,7 @@ echo $PS1
 
 ---
 
-## 🔍 Verifying custom PS1 prompt config was appended to ~/.bashrc
+## Verifying custom PS1 prompt config was appended to ~/.bashrc
 
 > **Timestamp:** `2026-06-15 22:35:32`
 
@@ -66,7 +66,7 @@ export PS1='\[\033[01;32m\]\u\[\033[00m\]@\[\033[01;36m\]\h\[\033[00m\]:\[\033[0
 
 ---
 
-## 🔍 Applying ~/.bashrc changes and confirming new PS1 value
+## Applying ~/.bashrc changes and confirming new PS1 value
 
 > **Timestamp:** `2026-06-15 22:35:51`
 
@@ -96,7 +96,7 @@ echo $PS1
 
 ---
 
-## 🔍 Testing git branch display in prompt using a test repo
+## Testing git branch display in prompt using a test repo
 
 > **Timestamp:** `2026-06-15 22:36:15`
 
@@ -134,7 +134,7 @@ Initialized empty Git repository in /tmp/test-repo/.git/
 
 ---
 
-## 🔍 Testing git branch display in prompt using a test repo
+## Testing git branch display in prompt using a test repo
 
 > **Timestamp:** `2026-06-15 22:59:40`
 
@@ -175,7 +175,7 @@ cd /tmp/test-repo && git branch
 
 ---
 
-## 🔍 Applying custom PS1 prompt config to devops-user and verifying
+## Applying custom PS1 prompt config to devops-user and verifying
 
 > **Timestamp:** `2026-06-15 23:01:32`
 
@@ -225,7 +225,7 @@ sudo -u devops-user bash -c 'source ~/.bashrc && echo $PS1'
 
 ---
 
-## 🔍 Applying custom PS1 prompt config to devops-user and verifying
+## Applying custom PS1 prompt config to devops-user and verifying
 
 > **Timestamp:** `2026-06-15 23:19:00`
 

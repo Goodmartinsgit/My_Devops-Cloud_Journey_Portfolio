@@ -1,4 +1,4 @@
-# Task 3: Create a DevOps User with Passwordless Sudo
+﻿# Task 3: Create a DevOps User with Passwordless Sudo
 
 ## Objective
 
@@ -9,7 +9,7 @@ Create a new system user named `devops-user` with a secure default shell, add it
 
 ---
 
-## 🔍 creating and setting password for  devops user account
+## creating and setting password for  devops user account
 
 > **Timestamp:** `2026-06-11 10:41:29`
 
@@ -30,7 +30,7 @@ passwd: password updated successfully
 
 ---
 
-## 🔍 adding devops-user to sudo group with full passwordless sudo privileges configuration
+## adding devops-user to sudo group with full passwordless sudo privileges configuration
 
 > **Timestamp:** `2026-06-11 12:02:15`
 
@@ -49,7 +49,7 @@ devops-user ALL=(ALL) NOPASSWD: ALL
 
 ---
 
-## 🔍 Testing and verifying the users account
+## Testing and verifying the users account
 
 > **Timestamp:** `2026-06-11 12:18:45`
 
@@ -68,7 +68,7 @@ Password:
 
 ---
 
-## 🔍 switching ti devops-user account
+## switching ti devops-user account
 
 > **Timestamp:** `2026-06-11 12:30:44`
 
@@ -87,7 +87,7 @@ Hangup
 ---
 
 
-## 🔍 Verifying devops-user account
+## Verifying devops-user account
 
 > **Timestamp:** `2026-06-13 08:31:07`
 

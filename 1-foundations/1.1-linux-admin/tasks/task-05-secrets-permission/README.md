@@ -1,4 +1,4 @@
-# Task 5: Create a Secrets File with Permission 600
+﻿# Task 5: Create a Secrets File with Permission 600
 
 ## Objective
 
@@ -9,7 +9,7 @@ Harden sensitive database credentials by setting their file access permissions t
 
 ---
 
-## 🔍 creating the file
+## creating the file
 
 > **Timestamp:** `2026-06-15 16:50:21`
 
@@ -38,7 +38,7 @@ sudo touch /projects/devops/secrets/db-credentials.conf
 
 ---
 
-## 🔍 Check ownership and permissions
+## Check ownership and permissions
 
 > **Timestamp:** `2026-06-15 17:23:13`
 
@@ -56,7 +56,7 @@ ls -la /projects/devops/secrets/db-credentials.conf
 
 ---
 
-## 🔍 Checking the content
+## Checking the content
 
 > **Timestamp:** `2026-06-15 17:28:18`
 

@@ -1,4 +1,4 @@
-# Task 6: Install and Manage Nginx as a Systemd Service
+﻿# Task 6: Install and Manage Nginx as a Systemd Service
 
 ## Objective
 
@@ -9,7 +9,7 @@ Install the Nginx web server, practice systemd service daemon controls (start, s
 
 ---
 
-## 🔍 Installing nginx web server
+## Installing nginx web server
 
 > **Timestamp:** `2026-06-15 17:50:40`
 
@@ -130,7 +130,7 @@ Processing triggers for man-db (2.12.0-4build2) ...
 
 ---
 
-## 🔍 Checking initial nginx status after installation
+## Checking initial nginx status after installation
 
 > **Timestamp:** `2026-06-15 17:57:51`
 
@@ -143,7 +143,7 @@ sudo systemctl status nginx
 **Output:**
 
 ```text
-● nginx.service - A high performance web server and a reverse proxy server
+ nginx.service - A high performance web server and a reverse proxy server
      Loaded: loaded (/usr/lib/systemd/system/nginx.service; enabled; preset: enabled)
      Active: active (running) since Mon 2026-06-15 17:52:06 WAT; 5min ago
        Docs: man:nginx(8)
@@ -154,15 +154,15 @@ sudo systemctl status nginx
      Memory: 6.4M (peak: 14.5M)
         CPU: 453ms
      CGroup: /system.slice/nginx.service
-             ├─2457 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"
-             ├─2460 "nginx: worker process"
-             ├─2461 "nginx: worker process"
-             ├─2462 "nginx: worker process"
-             ├─2463 "nginx: worker process"
-             ├─2464 "nginx: worker process"
-             ├─2465 "nginx: worker process"
-             ├─2466 "nginx: worker process"
-             └─2467 "nginx: worker process"
+             2457 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"
+             2460 "nginx: worker process"
+             2461 "nginx: worker process"
+             2462 "nginx: worker process"
+             2463 "nginx: worker process"
+             2464 "nginx: worker process"
+             2465 "nginx: worker process"
+             2466 "nginx: worker process"
+             2467 "nginx: worker process"
 
 Jun 15 17:52:06 ELDAVED-GLOBAL systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
 Jun 15 17:52:06 ELDAVED-GLOBAL systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
@@ -171,7 +171,7 @@ Jun 15 17:52:06 ELDAVED-GLOBAL systemd[1]: Started nginx.service - A high perfor
 
 ---
 
-## 🔍 Practising nginx service management - stop, start, reload, restart
+## Practising nginx service management - stop, start, reload, restart
 
 > **Timestamp:** `2026-06-15 17:59:14`
 
@@ -195,7 +195,7 @@ sudo systemctl status nginx
 **Output:**
 
 ```text
-○ nginx.service - A high performance web server and a reverse proxy server
+ nginx.service - A high performance web server and a reverse proxy server
      Loaded: loaded (/usr/lib/systemd/system/nginx.service; enabled; preset: enabled)
      Active: inactive (dead) since Mon 2026-06-15 17:59:16 WAT; 1s ago
    Duration: 7min 10.180s
@@ -233,7 +233,7 @@ sudo systemctl status nginx
 **Output:**
 
 ```text
-● nginx.service - A high performance web server and a reverse proxy server
+ nginx.service - A high performance web server and a reverse proxy server
      Loaded: loaded (/usr/lib/systemd/system/nginx.service; enabled; preset: enabled)
      Active: active (running) since Mon 2026-06-15 17:59:21 WAT; 2s ago
        Docs: man:nginx(8)
@@ -244,15 +244,15 @@ sudo systemctl status nginx
      Memory: 7.1M (peak: 7.1M)
         CPU: 460ms
      CGroup: /system.slice/nginx.service
-             ├─2725 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"
-             ├─2726 "nginx: worker process"
-             ├─2727 "nginx: worker process"
-             ├─2728 "nginx: worker process"
-             ├─2729 "nginx: worker process"
-             ├─2731 "nginx: worker process"
-             ├─2732 "nginx: worker process"
-             ├─2733 "nginx: worker process"
-             └─2734 "nginx: worker process"
+             2725 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"
+             2726 "nginx: worker process"
+             2727 "nginx: worker process"
+             2728 "nginx: worker process"
+             2729 "nginx: worker process"
+             2731 "nginx: worker process"
+             2732 "nginx: worker process"
+             2733 "nginx: worker process"
+             2734 "nginx: worker process"
 
 Jun 15 17:59:20 ELDAVED-GLOBAL systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
 Jun 15 17:59:21 ELDAVED-GLOBAL systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
@@ -283,7 +283,7 @@ sudo systemctl restart nginx
 
 ---
 
-## 🔍 Enabling nginx to start on boot and verifying
+## Enabling nginx to start on boot and verifying
 
 > **Timestamp:** `2026-06-15 18:00:06`
 
@@ -315,7 +315,7 @@ enabled
 
 ---
 
-## 🔍 Checking nginx logs and generating a test access log entry
+## Checking nginx logs and generating a test access log entry
 
 > **Timestamp:** `2026-06-15 18:01:09`
 
@@ -388,7 +388,7 @@ Commercial support is available at
 
 ---
 
-## 🔍 Testing nginx configuration syntax
+## Testing nginx configuration syntax
 
 > **Timestamp:** `2026-06-15 18:02:32`
 
