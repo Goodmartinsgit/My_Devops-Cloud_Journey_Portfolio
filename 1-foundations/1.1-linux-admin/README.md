@@ -62,7 +62,7 @@ sudo apt install -y nginx
 
 ---
 
-## 🔧 Built-in System Tools Used
+##  Built-in System Tools Used
 
 These tools are pre-installed on Ubuntu 24.04 and required no explicit installation. They were nonetheless central to completing the tasks and are documented here for full transparency.
 
@@ -158,5 +158,5 @@ These tools are pre-installed on Ubuntu 24.04 and required no explicit installat
 
 ---
 
-[⬅ Back to Foundations Module](../README.md)
+[ Back to Foundations Module](../README.md)
 

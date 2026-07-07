@@ -119,4 +119,4 @@ sudo apt install wireguard -y
 
 ---
 
-[⬅ Back to Foundations Module](../README.md)
+[ Back to Foundations Module](../README.md)
